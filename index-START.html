@@ -73,7 +73,7 @@
       /*Listen for every single key*/
       const keys = document.querySelectorAll(".key");
       /*Watch for transition end on each one*/
-      key.forEach((key) =>
+      keys.forEach((key) =>
         key.addEventListener("transitionend, removeTransition")
       );
       window.addEventListener("keydown", playSound);
