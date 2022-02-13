@@ -65,6 +65,13 @@
         audio.play();
         key.classList.add("playing");
       }
+      /*Listen for every single key*/
+      const keys = document.querySelectorAll(".key");
+      /*Watch for transition end on each one*/
+      key.forEach((key) =>
+        key.addEventListener("transitionend, removeTransition")
+      );
+      window.addEventListener("keydown", playSound);
     </script>
   </body>
 </html>
