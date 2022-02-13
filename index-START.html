@@ -58,7 +58,7 @@
     <script>
       /*Function to remove transition*/
       function removeTransition(e) {
-        if (e.propertyName !== "transition") return; //skip if it is not a transform
+        if (e.propertyName !== "transform") return; //skip if it is not a transform
         e.target.classList.remove("playing");
       }
       /*Function that plays the audio for the selected key*/
